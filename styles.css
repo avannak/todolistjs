@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body{
+background-color: rgb(185,224,200);
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+h1{
+  font-size: 36px;
+  font-size-adjust: auto;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 5px;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  text-shadow: 2px 3px rgba(100,150,117, .9);
+}
+.topBadge{
+  padding: 15px;
+  background-color: rgba(100,150,117,.5);
+  width: 100%;
+  height: 85px;
+  position: fixed;
+
+  top:75px;
+  left:0;
+  z-index: 5;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(100,150,117, .8);
+
+}
+.topBadge input{
+  position: fixed;
+  padding: 0 75px 0 0;
+  width: 72%;
+  height: 79px;
+  float: left;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  font-size: 26px;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 45px;
+  text-indent: 18px;
+  text-align: left;
+
+
+}
+.topBadge button{
+
+  padding: 39px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left:71%;
+border-top-right-radius: 45px;
+border-top-left-radius: 45px;
+border-bottom-left-radius: 45px;
+border-bottom-right-radius: 45px;
+background-color: rgb(77, 182, 172);
+cursor: pointer;
+border:0;
+box-shadow: 2px 2px 2px rgba(35, 35, 35, .3);
+}
+.topBadge button svg{
+  width: 100px;
+  height: 85px;
+  position: relative;
+  padding: 0;
+  right: 50px;
+  bottom: 42px;
+  border: 0;
+}
+
+.topBadge button.submitbutton svg .fill{
+  fill: rgb(185,244,199);
+  transition:fill .2s ease;
+
+}
+
+.topBadge button.submitbutton:hover svg .fill{
+  fill: #f7074a;
+}
+
+ul.todo{
+  width: 85%;
+  float: left;
+  padding: 10px;
+  position: absolute;
+  top: 200px;
+}
+
+ul.todo li{
+  width: 100%;
+  height: 35px;
+  float: left;
+  background: rgb(249, 249, 249);
+  border-radius: 5px 5px;
+  list-style: none;
+  box-shadow: 2px 2px 2px 2px rgba(50,50,50, .2);
+  margin: 0 0 10px 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  text-align:  left;
+  position: relative;
+  padding: 15px 15px 2px 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+ul.todo li:last-of-type{
+  margin:0;
+}
+ul.todo button{
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border: 0px;
+  float: right;
+  margin: 0 10px 0 0;
+  border-radius: 24px;
+  cursor: pointer;
+  position: relative;
+  bottom: 33px;
+  left: 20px;
+}
+
+
+ul.todo li .buttons button.remove svg .fill{
+  fill:#707070;
+  transition:fill .2s ease;
+}
+
+ul.todo li .buttons button.remove:hover svg .fill{
+  fill:#f7074a;
+}
+
+ul.todo li .buttons button.check:hover svg .fill{
+  fill: red;
+}
+
+ul.todo li .buttons button.check svg .fill{
+  fill: #7bce44;
+  transition:fill .2s ease;
+}
+ul.todo button:last-of-type:before{
+  content:'';
+  width:1px;
+  height: 30px;
+  position: absolute;
+  top:10px;
+  left:50px;
+  background: grey;
+}
+
+.crossed{
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.151);
+  font-style: italic;
+}
+
+.Date{
+  position: absolute;
+  right: 20%;
+  
+  bottom: 97%;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+  text-shadow: 1.5px 2px rgba(100,150,117, .9);
+}
+.clearAll{
+  
+  position: absolute;
+  align-content: center;
+  top: 195px;
+  left: 25%;
+  padding: 15px 40px 12px 60px;
+  width: 200px;
+}

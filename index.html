@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <h1>To Do List</h1>
+  <input type="button" class = "clearAll" id = "clearall" value = "CLEAR ALL">
+
+  </input>
+  <div class = "Date">The date is 
+    <span id = "month"></span>
+    <span id = "day"></span>
+    <span id = "year"></span>
+    The Time is: 
+    <span id = "hour"></span>
+    :
+    <span id = "minutes"></span>
+    :
+    <span id = "seconds"></span>
+  </div>
+    <div class="topBadge">
+      <form class="form-inline" id="addForm">
+        <input id= "item" type="text" name="textbox" onfocus="this.value= ''" placeholder="enter a task">
+              <button type="button" class="submitbutton" id= "add">
+                <?xml version="1.0" ?><!doctypehtml><svg enable-background="new 0 0 512 512"id=Layer_1 version=1.1 viewBox="0 0 512 512"xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g id=Layer_1_1_><path class="fill" d=M494,256c0,131.4-106.6,238-238,238S18,387.4,18,256S124.6,18,256,18S494,124.6,494,256z fill=#4DB6AC /></g><g id=Layer_2><g><line fill=none stroke=#FFFFFF stroke-linecap=round stroke-miterlimit=10 stroke-width=16 x1=256 x2=256 y1=146 y2=374 /><line fill=none stroke=#FFFFFF stroke-linecap=round stroke-miterlimit=10 stroke-width=16 x1=150.5 x2=361.5 y1=260 y2=260 /></g></g></svg>
+              </button>
+      </form>
+
+    </div>
+    <div class="container" id='main'>
+      <ul class="todo" id ="todo">
+        <!-- <li>
+
+          <div class="buttons">
+            <button type="button" class="check">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class = "fill" fill="none" d="M0 0h24v24H0z"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+              
+            </button>
+            <p class = "crossed">
+              
+            </p>
+            <button type="button" class="remove">
+
+              <?xml version="1.0" ?><!doctypehtml> <svg  enable-background="new 0 0 512 512"id=Layer_1 version=1.1 viewBox="0 0 512 512"xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink><g><path class="fill" d=M493.8,257.5c0,131.4-106.6,238-238,238s-238-106.6-238-238s106.6-238,238-238S493.8,126.1,493.8,257.5z fill=#F06292 /></g><g><polygon fill=none points="310.9,381.1    201.1,381.1 180.6,170.3 331.4,170.3  "stroke=#FFFFFF stroke-linejoin=round stroke-miterlimit=10 stroke-width=16 /><line fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-miterlimit=10 stroke-width=16 x1=180.6 x2=160 y1=170.3 y2=170.3 /><line fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-miterlimit=10 stroke-width=16 x1=331.4 x2=352 y1=170.3 y2=170.3 /><rect fill=none height=27.4 stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-miterlimit=10 stroke-width=16 width=51.4 x=230.1 y=142.9 /></g></svg>
+
+            </button>
+
+          </div>
+
+        </li> -->
+
+      </ul>
+      <ul class= "todo" id ="completed">
+        
+      </ul>
+    </div>
+
+    <script src="main.js" charset="utf-8">
+      localStorage
+      
+    </script>
+  </body>
+</html>
